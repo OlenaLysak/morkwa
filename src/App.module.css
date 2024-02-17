@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-align: center;
 }
 
 .content {
@@ -55,14 +56,13 @@
   display: flex;
   font-size: 40px;
   text-transform: uppercase;
-  /* justify-content: center; */
-  /* border: solid 1px red; */
   align-items: center;
 }
 
 .products {
   text-transform: uppercase;
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: space-around;
   font-size: 24px;
@@ -73,20 +73,11 @@
   justify-content: center;
   margin: 10px;
 }
-.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: solid 1px red; */
-  height: 100%;
-}
 
 .announcement {
   text-transform: uppercase;
   font-size: 80px;
   color: #026c6a;
-  font-weight: 700;
-  /* border: solid 1px red; */
 }
 
 .socialNetworks {
@@ -117,4 +108,18 @@
 
 .pinIcon {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .announcement {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
 }

@@ -10,6 +10,17 @@ import facebookIcon from './assets/facebook-icon.png';
 import instaIcon from './assets/insta-icon.png';
 
 function App() {
+  const facebookPageUrl = 'https://www.facebook.com/morkwa.eco';
+  const instaPageUrl = 'https://www.instagram.com/morkwa.official/';
+
+  const redirectToFacebookPage = () => {
+    window.open(facebookPageUrl, '_blank');
+  };
+
+  const redirectToInstaPage = () => {
+    window.open(instaPageUrl, '_blank');
+  };
+
   return (
     <div className={styles.App}>
       <header className={styles.header}>
@@ -20,19 +31,23 @@ function App() {
       <div className={styles.content}>
         <div className={styles.subtitle}>COMING SOON</div>
         <div className={styles.products}>
-          <div className={styles.test}>Кастомізація під бренд</div>
+          <div>Кастомізація під бренд</div>
           <div>мішечки / шопери / набори</div>
           <div>брендування продукції</div>
         </div>
         <div className={styles.announcement}>WEBSITE UNDER CONSTRUCTION</div>
         <div className={styles.socialNetworks}>
           <div>Follow us</div>
-          <div>
-            <img src={facebookIcon} alt="facebook" />
-          </div>
-          <div>
-            <img src={instaIcon} alt="instagram" />
-          </div>
+          <a href={facebookPageUrl} target="_blank" rel="noopener noreferrer">
+            <div onClick={redirectToFacebookPage}>
+              <img src={facebookIcon} alt="facebook" />
+            </div>
+          </a>
+          <a href={instaPageUrl} target="_blank" rel="noopener noreferrer">
+            <div onClick={redirectToInstaPage}>
+              <img src={instaIcon} alt="instagram" />
+            </div>
+          </a>
         </div>
       </div>
       <footer className={styles.footer}>
