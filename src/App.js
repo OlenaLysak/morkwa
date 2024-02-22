@@ -3,24 +3,14 @@ import React from 'react';
 //Style
 import styles from './App.module.css';
 
+//Components
+import SocialNetworks from './components/SocialNetworks/SocialNetworks';
+
 //Images
 import logo from './assets/logo.png';
 import pin from './assets/pin.png';
-import facebookIcon from './assets/facebook-icon.png';
-import instaIcon from './assets/insta-icon.png';
 
 function App() {
-  const facebookPageUrl = 'https://www.facebook.com/morkwa.eco';
-  const instaPageUrl = 'https://www.instagram.com/morkwa.official/';
-
-  const redirectToFacebookPage = () => {
-    window.open(facebookPageUrl, '_blank');
-  };
-
-  const redirectToInstaPage = () => {
-    window.open(instaPageUrl, '_blank');
-  };
-
   return (
     <div className={styles.App}>
       <header className={styles.header}>
@@ -36,25 +26,13 @@ function App() {
           <div>брендування продукції</div>
         </div>
         <div className={styles.announcement}>WEBSITE UNDER CONSTRUCTION</div>
-        <div className={styles.socialNetworks}>
-          <div>Follow us</div>
-          <a href={facebookPageUrl} target="_blank" rel="noopener noreferrer">
-            <div onClick={redirectToFacebookPage}>
-              <img src={facebookIcon} alt="facebook" />
-            </div>
-          </a>
-          <a href={instaPageUrl} target="_blank" rel="noopener noreferrer">
-            <div onClick={redirectToInstaPage}>
-              <img src={instaIcon} alt="instagram" />
-            </div>
-          </a>
-        </div>
+        <SocialNetworks />
       </div>
       <footer className={styles.footer}>
         <div className={styles.pinIcon}>
           <img src={pin} alt="pin" />
         </div>
-        <div>м. Львів, вул. Зелена 115д, оф. 521</div>
+        <div>м. Львів, вул. Зелена 115б, оф. 521</div>
       </footer>
     </div>
   );
