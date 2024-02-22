@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  z-index: 2; /* Set a higher z-index for the other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* text-align: center; */
+  flex-direction: row;
+  background-color: #e57550;
+  height: 80px;
+  width: 100%;
+  color: #fef9f6;
+  font-size: 20px;
+}
+
+.pinIcon {
+  margin-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -7,6 +7,7 @@ import styles from './SocialNetworksStyle.module.css';
 import facebookIcon from '../../assets/facebook-icon.png';
 import facebookActiveIcon from '../../assets/facebook-active.png';
 import instaIcon from '../../assets/insta-icon.png';
+import instaActiveIcon from '../../assets/insta-active.png';
 
 //Components
 import HoverImageLink from './HoverImageLink';
@@ -14,13 +15,6 @@ import HoverImageLink from './HoverImageLink';
 import { instaPageUrl, facebookPageUrl } from '../../constants/data';
 
 const SocialNetworks = () => {
-  const redirectToFacebookPage = () => {
-    window.open(facebookPageUrl, '_blank');
-  };
-
-  const redirectToInstaPage = () => {
-    window.open(instaPageUrl, '_blank');
-  };
   return (
     <div className={styles.container}>
       <div>Follow us</div>
@@ -32,7 +26,7 @@ const SocialNetworks = () => {
       <HoverImageLink
         url={instaPageUrl}
         defaultImage={instaIcon}
-        hoverImage={instaIcon}
+        hoverImage={instaActiveIcon}
       />
     </div>
   );

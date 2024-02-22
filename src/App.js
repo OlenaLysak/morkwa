@@ -5,10 +5,10 @@ import styles from './App.module.css';
 
 //Components
 import SocialNetworks from './components/SocialNetworks/SocialNetworks';
+import Footer from './components/Footer/Footer';
 
 //Images
 import logo from './assets/logo.png';
-import pin from './assets/pin.png';
 
 function App() {
   return (
@@ -28,12 +28,7 @@ function App() {
         <div className={styles.announcement}>WEBSITE UNDER CONSTRUCTION</div>
         <SocialNetworks />
       </div>
-      <footer className={styles.footer}>
-        <div className={styles.pinIcon}>
-          <img src={pin} alt="pin" />
-        </div>
-        <div>м. Львів, вул. Зелена 115б, оф. 521</div>
-      </footer>
+      <Footer />
     </div>
   );
 }
