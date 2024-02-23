@@ -1,16 +1,28 @@
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/pt-root-ui_regular.woff2') format('woff2'),
-    url('fonts/pt-root-ui_regular.woff') format('woff'),
-    url('fonts/pt-root-ui_regular.ttf') format('ttf');
+  font-family: 'PT Root UI medium';
+  src: url('fonts/pt-root-ui_medium.woff2') format('woff2'),
+    url('fonts/pt-root-ui_medium.woff') format('woff'),
+    url('fonts/pt-root-ui_medium.otf') format('woff'),
+    url('fonts/pt-root-ui_medium.ttf') format('ttf');
   /* Add additional font formats if available */
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PT Root UI bold';
+  src: url('fonts/pt-root-ui_bold.woff2') format('woff2'),
+    url('fonts/pt-root-ui_bold.woff') format('woff'),
+    url('fonts/pt-root-ui_bold.otf') format('woff'),
+    url('fonts/pt-root-ui_bold.ttf') format('ttf');
+  /* Add additional font formats if available */
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'PT Root UI', sans-serif;
+  font-family: 'PT Root UI medium', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
