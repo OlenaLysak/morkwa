@@ -65,6 +65,7 @@
   font-size: 80px;
   color: #026c6a;
   font-family: 'PT Root UI bold', sans-serif;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {

@@ -8,17 +8,27 @@ import facebookIcon from '../../assets/facebook-icon.png';
 import facebookActiveIcon from '../../assets/facebook-active.png';
 import instaIcon from '../../assets/insta-icon.png';
 import instaActiveIcon from '../../assets/insta-active.png';
+import mailIcon from '../../assets/mail.png';
+import mailActiveIcon from '../../assets/mail-active.png';
+import telegramIcon from '../../assets/telegram.png';
+import telegramActiveIcon from '../../assets/telegram-active.png';
 
 //Components
 import HoverImageLink from './HoverImageLink';
 
-import { instaPageUrl, facebookPageUrl } from '../../constants/data';
+//Constants
+import {
+  instaPageUrl,
+  facebookPageUrl,
+  mailToUrl,
+  telegramUrl,
+} from '../../constants/data';
 
 const Contacts = () => {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <div>Follow us:</div>
+        <div className={styles.title}>Follow us:</div>
         <HoverImageLink
           url={facebookPageUrl}
           defaultImage={facebookIcon}
@@ -31,9 +41,19 @@ const Contacts = () => {
         />
       </div>
       <div className={styles.row}>
-        <div>Contact us:</div>
-        <HoverImageLink />
-        <HoverImageLink />
+        <div className={styles.title}>Contact us:</div>
+        <HoverImageLink
+          url={mailToUrl}
+          defaultImage={mailIcon}
+          hoverImage={mailActiveIcon}
+          text={'morkwa.cooperation@gmail.com'}
+        />
+        <HoverImageLink
+          url={telegramUrl}
+          defaultImage={telegramIcon}
+          hoverImage={telegramActiveIcon}
+          text={'@morkwa_tm'}
+        />
       </div>
     </div>
   );
