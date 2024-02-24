@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './App.module.css';
 
 //Components
-import SocialNetworks from './components/SocialNetworks/SocialNetworks';
+import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 
 //Images
@@ -26,7 +26,7 @@ function App() {
           <div>брендування продукції</div>
         </div>
         <div className={styles.announcement}>WEBSITE UNDER CONSTRUCTION</div>
-        <SocialNetworks />
+        <Contacts />
       </div>
       <Footer />
     </div>
