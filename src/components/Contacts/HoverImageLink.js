@@ -28,11 +28,7 @@ const HoverImageLink = ({ url, defaultImage, hoverImage, text = '' }) => {
         onMouseLeave={handleMouseLeave}
       >
         <img src={imageSrc} alt="Link" className={styles.iconGap} />
-        <div
-          style={{
-            color: isHovered ? '#026c6a' : 'inherit',
-          }}
-        >
+        <div className={isHovered ? styles.textActive : styles.text}>
           {text}
         </div>
       </div>

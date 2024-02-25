@@ -7,10 +7,14 @@
 .linkItem {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-right: 10px;
 }
+
 .iconGap {
   margin-right: 8px;
+  width: 24px;
+  height: 24px;
 }
 
 .textActive:hover {
@@ -20,5 +24,14 @@
 @media screen and (max-width: 820px) {
   .link {
     margin-bottom: 10px;
+  }
+
+  .linkItem {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    display: none;
   }
 }
