@@ -29,31 +29,35 @@ const Contacts = () => {
     <div className={styles.container}>
       <div className={styles.row}>
         <div className={styles.title}>Follow us:</div>
-        <HoverImageLink
-          url={facebookPageUrl}
-          defaultImage={facebookIcon}
-          hoverImage={facebookActiveIcon}
-        />
-        <HoverImageLink
-          url={instaPageUrl}
-          defaultImage={instaIcon}
-          hoverImage={instaActiveIcon}
-        />
+        <div className={styles.links}>
+          <HoverImageLink
+            url={facebookPageUrl}
+            defaultImage={facebookIcon}
+            hoverImage={facebookActiveIcon}
+          />
+          <HoverImageLink
+            url={instaPageUrl}
+            defaultImage={instaIcon}
+            hoverImage={instaActiveIcon}
+          />
+        </div>
       </div>
       <div className={styles.row}>
         <div className={styles.title}>Contact us:</div>
-        <HoverImageLink
-          url={mailToUrl}
-          defaultImage={mailIcon}
-          hoverImage={mailActiveIcon}
-          text={'morkwa.cooperation@gmail.com'}
-        />
-        <HoverImageLink
-          url={telegramUrl}
-          defaultImage={telegramIcon}
-          hoverImage={telegramActiveIcon}
-          text={'@morkwa_tm'}
-        />
+        <div className={styles.links}>
+          <HoverImageLink
+            url={mailToUrl}
+            defaultImage={mailIcon}
+            hoverImage={mailActiveIcon}
+            text={'morkwa.cooperation@gmail.com'}
+          />
+          <HoverImageLink
+            url={telegramUrl}
+            defaultImage={telegramIcon}
+            hoverImage={telegramActiveIcon}
+            text={'@morkwa_tm'}
+          />
+        </div>
       </div>
     </div>
   );

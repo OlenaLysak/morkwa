@@ -20,13 +20,18 @@
   text-wrap: nowrap;
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 900px) {
+  .title {
+    margin-bottom: 10px;
+  }
+
   .row {
     display: flex;
     flex-direction: column;
-  }
-
-  .title {
-    margin-bottom: 10px;
   }
 }
