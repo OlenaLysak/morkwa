@@ -12,13 +12,20 @@
 
 .header,
 .content {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   text-align: center;
+}
+
+.moto {
+  font-size: 40px;
+  color: #026c6a;
+  text-transform: uppercase;
+  font-family: 'PT Root UI regular', sans-serif;
+  margin-bottom: 50px;
 }
 
 .content {
@@ -28,7 +35,8 @@
 
 .logoContainer {
   display: flex;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .logoImg {
@@ -62,7 +70,7 @@
 
 .announcement {
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 60px;
   color: #026c6a;
   font-family: 'PT Root UI bold', sans-serif;
   margin-bottom: 20px;

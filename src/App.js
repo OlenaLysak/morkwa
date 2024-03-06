@@ -17,15 +17,16 @@ function App() {
         <div className={styles.logoContainer}>
           <img alt="Morkwa" src={logo} className={styles.logoImg} />
         </div>
+        <div className={styles.moto}>АКСЕСУАРИ ДЛЯ СВІДОМИХ</div>
       </header>
       <div className={styles.content}>
-        <div className={styles.subtitle}>COMING SOON</div>
         <div className={styles.products}>
           <div>Кастомізація під бренд</div>
           <div>мішечки / шопери / набори</div>
           <div>брендування продукції</div>
         </div>
         <div className={styles.announcement}>WEBSITE UNDER CONSTRUCTION</div>
+        <div className={styles.subtitle}>COMING SOON</div>
         <Contacts />
       </div>
       <Footer />
