@@ -19,6 +19,9 @@
   width: 100%;
   text-align: center;
 }
+.content {
+  flex-grow: 1;
+}
 
 .moto {
   font-size: 40px;
