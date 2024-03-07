@@ -91,10 +91,19 @@
   .subtitle {
     font-size: 24px;
   }
+
+  .moto {
+    font-size: 20px;
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .announcement {
     font-size: 40px;
+  }
+
+  .moto {
+    font-size: 30px;
   }
 }
