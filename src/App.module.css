@@ -109,4 +109,8 @@
   .subtitle {
     display: none;
   }
+
+  .moto {
+    font-size: 25px;
+  }
 }
