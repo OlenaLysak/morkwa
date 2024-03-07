@@ -27,7 +27,7 @@ import {
 const Contacts = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.row}>
+      <div className={styles.row} style={{ marginBottom: '10px' }}>
         <div className={styles.title}>Follow us:</div>
         <div className={styles.links}>
           <HoverImageLink
